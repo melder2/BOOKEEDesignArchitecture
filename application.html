@@ -1,0 +1,601 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BOOKEE Appointment Scheduler</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/applicationCSS.css">
+<link rel="stylesheet" href="css/bookee.css">
+<script src="js/bookeeJS.js"></script>
+
+
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+        <h1><strong>BOOKEE Appointment Scheduler</strong></h1>
+     </div>
+        <div id="calendarmonth">
+                <h1><strong>January 2023</strong></h1>
+            </div>
+    
+            <div id="sunday">
+                <h3><strong>SUN</strong></h3>
+            </div>
+    
+            <div id="monday">
+                <h3><strong>MON</strong></h3>
+            </div>
+    
+            <div id="tuesday">
+                <h3><strong>TUE</strong></h3>
+            </div>
+    
+            <div id="wednesday">
+                <h3><strong>WED</strong></h3>
+            </div>
+    
+            <div id="thursday">
+                <h3><strong>THU</strong></h3>
+            </div>
+    
+            <div id="friday">
+                <h3><strong>FRI</strong></h3>
+            </div>
+    
+            <div id="saturday">
+                <h3><strong>SAT</strong></h3>
+            </div>
+    
+        <div id="one">
+            <h4><strong>1</strong></h4>
+            <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+        </div>
+        
+        <div id="outputfordayone">
+            
+        </div>
+
+            <div id="two">
+                <h4><strong>2</strong></h4>
+                <div id="twoform">
+                    
+                    <button id="twobutton" onclick="AddTwo()">Add an Appointment</button>
+                    <button id="twocancelbutton" class="cancel-button" onclick="CancelTwo(); removeTwo();">Cancel an Appointment</button>
+                    <button id="submitbutton2" class="submit-button" onclick="outputTwo(); removeInputTwo();">Submit</button>
+                    
+                </div>
+                
+            </div>
+            
+
+        <div id="outputfordaytwo">
+            
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output5"></div></p>
+                <p><strong>1pm:</strong><div id="output6"></div></p>
+                <p><strong>3pm:</strong><div id="output7"></div></p>
+                <p><strong>5pm:</strong><div id="output8"></div></p>
+            
+        </div>
+
+            
+        
+            <div id="three">
+                <h4><strong>3</strong></h4>
+                <div id="threeform">
+                    
+                    <button id="threebutton" onclick="AddThree()">Add an Appointment</button>
+                    <button id="threecancelbutton" class="cancel-button" onclick="CancelThree(); removeThree();">Cancel an Appointment</button>
+                    <button id="submitbutton3" class="submit-button" onclick="outputThree(); removeInputThree();">Submit</button>
+                    
+                </div>
+            </div>
+    
+        <div id="outputfordaythree">
+            
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output9"></div></p>
+                <p><strong>1pm:</strong><div id="output10"></div></p>
+                <p><strong>3pm:</strong><div id="output11"></div></p>
+                <p><strong>5pm:</strong><div id="output12"></div></p>
+            
+        </div>
+
+            <div id="four">
+                <h4><strong>4</strong></h4>
+                <div id="fourform">
+                    
+                    <button id="fourbutton" onclick="AddFour()">Add an Appointment</button>
+                    <button id="fourcancelbutton" class="cancel-button" onclick="CancelFour(); removeFour();">Cancel an Appointment</button>
+                    <button id="submitbutton4" class="submit-button" onclick="outputFour(); removeInputFour();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordayfour">
+            
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output13"></div></p>
+                <p><strong>1pm:</strong><div id="output14"></div></p>
+                <p><strong>3pm:</strong><div id="output15"></div></p>
+                <p><strong>5pm:</strong><div id="output16"></div></p>
+            
+        </div>
+    
+            <div id="five">
+                <h4><strong>5</strong></h4>
+                <div id="fiveform">
+                    
+                    <button id="fivebutton" onclick="AddFive()">Add an Appointment</button>
+                    <button id="fivecancelbutton" class="cancel-button" onclick="CancelFive(); removeFive();">Cancel an Appointment</button>
+                    <button id="submitbutton5" class="submit-button" onclick="outputFive(); removeInputFive();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordayfive">
+            
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output17"></div></p>
+                <p><strong>1pm:</strong><div id="output18"></div></p>
+                <p><strong>3pm:</strong><div id="output19"></div></p>
+                <p><strong>5pm:</strong><div id="output20"></div></p>
+            
+        </div>
+    
+            <div id="six">
+                <h4><strong>6</strong></h4>
+                <div id="sixform">
+                    
+                    <button id="sixbutton" onclick="AddSix()">Add an Appointment</button>
+                    <button id="sixcancelbutton" class="cancel-button" onclick="CancelSix(); removeSix();">Cancel an Appointment</button>
+                    <button id="submitbutton6" class="submit-button" onclick="outputSix(); removeInputSix();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaysix">
+            
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output21"></div></p>
+                <p><strong>1pm:</strong><div id="output22"></div></p>
+                <p><strong>3pm:</strong><div id="output23"></div></p>
+                <p><strong>5pm:</strong><div id="output24"></div></p>
+            
+        </div>
+    
+            <div id="seven">
+                <h4><strong>7</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+
+        <div id="outputfordayseven">
+            
+        </div>
+    
+            <div id="eight">
+                <h4><strong>8</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+
+        <div id="outputfordayeight">
+            
+        </div>
+    
+            <div id="nine">
+                <h4><strong>9</strong></h4>
+                <div id="nineform">
+                    
+                    <button id="ninebutton" onclick="AddNine()">Add an Appointment</button>
+                    <button id="ninecancelbutton" class="cancel-button" onclick="CancelNine(); removeNine();">Cancel an Appointment</button>
+                    <button id="submitbutton9" class="submit-button" onclick="outputNine(); removeInputNine();">Submit</button>
+                    
+                </div>
+            </div>
+        <div id="outputfordaynine">
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output25"></div></p>
+                <p><strong>1pm:</strong><div id="output26"></div></p>
+                <p><strong>3pm:</strong><div id="output27"></div></p>
+                <p><strong>5pm:</strong><div id="output28"></div></p>
+        </div>
+    
+            <div id="ten">
+                <h4><strong>10</strong></h4>
+                <div id="tenform">
+                    
+                    <button id="tenbutton" onclick="AddTen()">Add an Appointment</button>
+                    <button id="tencancelbutton" class="cancel-button" onclick="CancelTen(); removeTen();">Cancel an Appointment</button>
+                    <button id="submitbutton10" class="submit-button" onclick="outputTen(); removeInputTen();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordayten">
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output29"></div></p>
+                <p><strong>1pm:</strong><div id="output30"></div></p>
+                <p><strong>3pm:</strong><div id="output31"></div></p>
+                <p><strong>5pm:</strong><div id="output32"></div></p>
+        </div>
+    
+            <div id="eleven">
+                <h4><strong>11</strong></h4>
+                <div id="elevenform">
+                    
+                    <button id="elevenbutton" onclick="AddEleven()">Add an Appointment</button>
+                    <button id="elevencancelbutton" class="cancel-button" onclick="CancelEleven(); removeEleven();">Cancel an Appointment</button>
+                    <button id="submitbutton11" class="submit-button" onclick="outputEleven(); removeInputEleven();">Submit</button>
+                    
+                </div>
+            </div>
+        
+        <div id="outputfordayeleven">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output33"></div></p>
+            <p><strong>1pm:</strong><div id="output34"></div></p>
+            <p><strong>3pm:</strong><div id="output35"></div></p>
+            <p><strong>5pm:</strong><div id="output36"></div></p>
+        </div>
+    
+            <div id="twelve">
+                <h4><strong>12</strong></h4>
+                <div id="twelveform">
+                    
+                    <button id="twelvebutton" onclick="AddTwelve()">Add an Appointment</button>
+                    <button id="twelvecancelbutton" class="cancel-button" onclick="CancelTwelve(); removeTwelve();">Cancel an Appointment</button>
+                    <button id="submitbutton12" class="submit-button" onclick="outputTwelve(); removeInputTwelve();">Submit</button>
+                    
+                </div>
+            </div>
+            
+        <div id="outputfordaytwelve">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output37"></div></p>
+            <p><strong>1pm:</strong><div id="output38"></div></p>
+            <p><strong>3pm:</strong><div id="output39"></div></p>
+            <p><strong>5pm:</strong><div id="output40"></div></p>
+        </div>
+    
+            <div id="thirteen">
+                <h4><strong>13</strong></h4>
+                <div id="thirteenform">
+                    
+                    <button id="thirteenbutton" onclick="AddThirteen()">Add an Appointment</button>
+                    <button id="thirteencancelbutton" class="cancel-button" onclick="CancelThirteen(); removeThirteen();">Cancel an Appointment</button>
+                    <button id="submitbutton13" class="submit-button" onclick="outputThirteen(); removeInputThirteen();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaythirteen">
+                
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output41"></div></p>
+            <p><strong>1pm:</strong><div id="output42"></div></p>
+            <p><strong>3pm:</strong><div id="output43"></div></p>
+            <p><strong>5pm:</strong><div id="output44"></div></p>
+        </div>
+    
+            <div id="fourteen">
+                <h4><strong>14</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+        
+        <div id="outputfordayfourteen">
+               
+        </div>
+    
+            <div id="fifteen">
+                <h4><strong>15</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+        
+        <div id="outputfordayfifteen">
+             
+        </div>
+    
+            <div id="sixteen">
+                <h4><strong>16</strong></h4>
+                <div id="sixteenform">
+                    
+                    <button id="sixteenbutton" onclick="AddSixteen()">Add an Appointment</button>
+                    <button id="sixteencancelbutton" class="cancel-button" onclick="CancelSixteen(); removeSixteen();">Cancel an Appointment</button>
+                    <button id="submitbutton16" class="submit-button" onclick="outputSixteen(); removeInputSixteen();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaysixteen">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output45"></div></p>
+            <p><strong>1pm:</strong><div id="output46"></div></p>
+            <p><strong>3pm:</strong><div id="output47"></div></p>
+            <p><strong>5pm:</strong><div id="output48"></div></p>
+        </div>
+    
+            <div id="seventeen">
+                <h4><strong>17</strong></h4>
+                <div id="seventeenform">
+                    
+                    <button id="seventeenbutton" onclick="AddSeventeen()">Add an Appointment</button>
+                    <button id="seventeencancelbutton" class="cancel-button" onclick="CancelSeventeen(); removeSeventeen();">Cancel an Appointment</button>
+                    <button id="submitbutton17" class="submit-button" onclick="outputSeventeen(); removeInputSeventeen();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordayseventeen">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output49"></div></p>
+            <p><strong>1pm:</strong><div id="output50"></div></p>
+            <p><strong>3pm:</strong><div id="output51"></div></p>
+            <p><strong>5pm:</strong><div id="output52"></div></p>
+        </div>
+    
+            <div id="eighteen">
+                <h4><strong>18</strong></h4>
+                <div id="eighteenform">
+                    
+                    <button id="eighteenbutton" onclick="AddEighteen()">Add an Appointment</button>
+                    <button id="eighteencancelbutton" class="cancel-button" onclick="CancelEighteen(); removeEighteen();">Cancel an Appointment</button>
+                    <button id="submitbutton18" class="submit-button" onclick="outputEighteen(); removeInputEighteen();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordayeighteen">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output53"></div></p>
+            <p><strong>1pm:</strong><div id="output54"></div></p>
+            <p><strong>3pm:</strong><div id="output55"></div></p>
+            <p><strong>5pm:</strong><div id="output56"></div></p>
+        </div>
+    
+            <div id="nineteen">
+                <h4><strong>19</strong></h4>
+                <div id="nineteenform">
+                    
+                    <button id="nineteenbutton" onclick="AddNineteen()">Add an Appointment</button>
+                    <button id="nineteencancelbutton" class="cancel-button" onclick="CancelNineteen(); removeNineteen();">Cancel an Appointment</button>
+                    <button id="submitbutton19" class="submit-button" onclick="outputNineteen(); removeInputNineteen();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaynineteen">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output57"></div></p>
+            <p><strong>1pm:</strong><div id="output58"></div></p>
+            <p><strong>3pm:</strong><div id="output59"></div></p>
+            <p><strong>5pm:</strong><div id="output60"></div></p>
+        </div>
+    
+            <div id="twenty">
+                <h4><strong>20</strong></h4>
+                <div id="twentyform">
+                    
+                    <button id="twentybutton" onclick="AddTwenty()">Add an Appointment</button>
+                    <button id="twentycancelbutton" class="cancel-button" onclick="CancelTwenty(); removeTwenty();">Cancel an Appointment</button>
+                    <button id="submitbutton20" class="submit-button" onclick="outputTwenty(); removeInputTwenty();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaytwenty">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output61"></div></p>
+            <p><strong>1pm:</strong><div id="output62"></div></p>
+            <p><strong>3pm:</strong><div id="output63"></div></p>
+            <p><strong>5pm:</strong><div id="output64"></div></p>
+        </div>
+    
+            <div id="twentyone">
+                <h4><strong>21</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+
+        <div id="outputfordaytwentyone">
+               
+        </div>
+    
+            <div id="twentytwo">
+                <h4><strong>22</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+
+            <div id="outputfordaytwentytwo">
+           
+            </div>
+    
+            <div id="twentythree">
+                <h4><strong>23</strong></h4>
+                <div id="twentythreeform">
+                    
+                    <button id="twentythreebutton" onclick="AddTwentyThree()">Add an Appointment</button>
+                    <button id="twentythreecancelbutton" class="cancel-button" onclick="CancelTwentyThree(); removeTwentyThree();">Cancel an Appointment</button>
+                    <button id="submitbutton23" class="submit-button" onclick="outputTwentyThree(); removeInputTwentyThree();">Submit</button>
+                    
+                </div>
+            </div>
+
+            <div id="outputfordaytwentythree">
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output65"></div></p>
+                <p><strong>1pm:</strong><div id="output66"></div></p>
+                <p><strong>3pm:</strong><div id="output67"></div></p>
+                <p><strong>5pm:</strong><div id="output68"></div></p>
+            </div>
+    
+            <div id="twentyfour">
+                <h4><strong>24</strong></h4>
+                <div id="twentyfourform">
+                    
+                    <button id="twentyfourbutton" onclick="AddTwentyFour()">Add an Appointment</button>
+                    <button id="twentyfourcancelbutton" class="cancel-button" onclick="CancelTwentyFour(); removeTwentyFour();">Cancel an Appointment</button>
+                    <button id="submitbutton24" class="submit-button" onclick="outputTwentyFour(); removeInputTwentyFour();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaytwentyfour">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output69"></div></p>
+            <p><strong>1pm:</strong><div id="output70"></div></p>
+            <p><strong>3pm:</strong><div id="output71"></div></p>
+            <p><strong>5pm:</strong><div id="output72"></div></p>
+        </div>
+    
+            <div id="twentyfive">
+                <h4><strong>25</strong></h4>
+                <div id="twentyfiveform">
+                    
+                    <button id="twentyfivebutton" onclick="AddTwentyFive()">Add an Appointment</button>
+                    <button id="twentyfivecancelbutton" class="cancel-button" onclick="CancelTwentyFive(); removeTwentyFive();">Cancel an Appointment</button>
+                    <button id="submitbutton25" class="submit-button" onclick="outputTwentyFive(); removeInputTwentyFive();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaytwentyfive">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output73"></div></p>
+            <p><strong>1pm:</strong><div id="output74"></div></p>
+            <p><strong>3pm:</strong><div id="output75"></div></p>
+            <p><strong>5pm:</strong><div id="output76"></div></p>
+        </div>
+    
+            <div id="twentysix">
+                <h4><strong>26</strong></h4>
+                <div id="twentysixform">
+                    
+                    <button id="twentysixbutton" onclick="AddTwentySix()">Add an Appointment</button>
+                    <button id="twentysixcancelbutton" class="cancel-button" onclick="CancelTwentySix(); removeTwentySix();">Cancel an Appointment</button>
+                    <button id="submitbutton26" class="submit-button" onclick="outputTwentySix(); removeInputTwentySix();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaytwentysix">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output77"></div></p>
+            <p><strong>1pm:</strong><div id="output78"></div></p>
+            <p><strong>3pm:</strong><div id="output79"></div></p>
+            <p><strong>5pm:</strong><div id="output80"></div></p>
+        </div>
+    
+            <div id="twentyseven">
+                <h4><strong>27</strong></h4>
+                <div id="twentysevenform">
+                    
+                    <button id="twentysevenbutton" onclick="AddTwentySeven()">Add an Appointment</button>
+                    <button id="twentysevencancelbutton" class="cancel-button" onclick="CancelTwentySeven(); removeTwentySeven();">Cancel an Appointment</button>
+                    <button id="submitbutton27" class="submit-button" onclick="outputTwentySeven(); removeInputTwentySeven();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaytwentyseven">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output81"></div></p>
+            <p><strong>1pm:</strong><div id="output82"></div></p>
+            <p><strong>3pm:</strong><div id="output83"></div></p>
+            <p><strong>5pm:</strong><div id="output84"></div></p>
+        </div>
+    
+            <div id="twentyeight">
+                <h4><strong>28</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+
+        <div id="outputfordaytwentyeight">
+                
+        </div>
+    
+            
+            <div id="twentynine">
+                <h4><strong>29</strong></h4>
+                <h4 style="text-align: center"><strong>Office Closed</strong></h4>
+            </div>
+
+        <div id="outputfordaytwentynine">
+               
+        </div>
+    
+            <div id="thirty">
+                <h4><strong>30</strong></h4>
+                <div id="thirtyform">
+                    
+                    <button id="thirtybutton" onclick="AddThirty()">Add an Appointment</button>
+                    <button id="thirtycancelbutton" class="cancel-button" onclick="CancelThirty(); removeThirty();">Cancel an Appointment</button>
+                    <button id="submitbutton30" class="submit-button" onclick="outputThirty(); removeInputThirty();">Submit</button>
+                    
+                </div>
+            </div>
+
+            <div id="outputfordaythirty">
+                <p><strong><u>Appointments</u></strong></p>
+                <p><strong>11am:</strong><div id="output85"></div></p>
+                <p><strong>1pm:</strong><div id="output86"></div></p>
+                <p><strong>3pm:</strong><div id="output87"></div></p>
+                <p><strong>5pm:</strong><div id="output88"></div></p>
+            </div>
+    
+            <div id="thirtyone">
+                <h4><strong>31</strong></h4>
+                <div id="thirtyoneform">
+                    
+                    <button id="thirtyonebutton" onclick="AddThirtyOne()">Add an Appointment</button>
+                    <button id="thirtyonecancelbutton" class="cancel-button" onclick="CancelThirtyOne(); removeThirtyOne();">Cancel an Appointment</button>
+                    <button id="submitbutton31" class="submit-button" onclick="outputThirtyOne(); removeInputThirtyOne();">Submit</button>
+                    
+                </div>
+            </div>
+
+        <div id="outputfordaythirtyone">
+            <p><strong><u>Appointments</u></strong></p>
+            <p><strong>11am:</strong><div id="output89"></div></p>
+            <p><strong>1pm:</strong><div id="output90"></div></p>
+            <p><strong>3pm:</strong><div id="output91"></div></p>
+            <p><strong>5pm:</strong><div id="output92"></div></p>
+        </div>
+    
+            <div id="blank">
+                <h4><strong></strong></h4>
+            </div>
+
+        <div id="outputfordayblank">
+               
+        </div>
+    
+            <div id="blank1">
+                <h4><strong></strong></h4>
+            </div>
+
+        <div id="outputfordayblank1">
+               
+        </div>
+    
+            <div id="blank2">
+                <h4><strong></strong></h4>
+            </div>
+
+        <div id="outputfordayblank2">
+               
+        </div>
+    
+            <div id="blank3">
+                <h4><strong></strong></h4>
+            </div>
+
+        <div id="outputfordayblank3">
+               
+        </div>
+        
+            <script src="js/bookeeJS.js"></script>
+    <footer><h5><strong>Designed By: Team Alguyrithms @2023 </strong></h5></footer>
+
+</body>
+</html>
