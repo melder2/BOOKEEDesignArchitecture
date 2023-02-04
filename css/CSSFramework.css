@@ -1,0 +1,21 @@
+﻿
+
+body {
+    border-block: 1px solid black;
+    text-align-last: left;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: #dfb93d;
+    column-gap: 10px;
+}
+#links {
+    font-weight: bolder;
+}
+
+.button{
+    margin-left: 20px;
+}
+
+#indent{
+    text-indent: 40px;
+}
+

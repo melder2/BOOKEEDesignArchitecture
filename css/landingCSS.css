@@ -1,0 +1,197 @@
+
+
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+
+
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 325px 250px 175px 75px 1700px;     
+}
+
+#productslogan{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: #752936 ;
+}
+
+#description{
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    background-color: #dfb93d;
+    padding: 10px; 
+}
+
+#image{
+    grid-column: 2 /span 2;
+    grid-row: 2;
+    
+}
+
+#productvision{
+    grid-column: 1 /span 2;
+    grid-row: 3;
+    background-color: #752936 ;
+    padding: 10px;    
+}
+
+#userfeatures{
+    grid-column: 1 /span 1;
+    grid-row: 4;
+    background-color:  #dfb93d;
+    padding: 10px;
+    
+}
+
+#adminfeatures{
+    grid-column: 2 /span 2;
+    grid-row: 4;
+    background-color:  #dfb93d;
+    padding: 10px;
+
+}
+
+#team{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    background-color:  #752936 ;
+    padding: 5px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#biographies{
+    grid-column: 1 /span 2;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 18% 2% 18% 2% 18% 2% 18% 2% 18% 10%;
+    font-size: small;
+}
+
+#bioimage1{
+    padding: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    background-color:  #752936 ; 
+}
+
+#bio1{
+    padding-left: 10px;
+    padding-top: 20px;
+    grid-column: 2/ span 2;
+    grid-row: 1;
+    background-color: #dfb93d;
+    font-size: medium;
+}
+
+#colorbar1{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    background-color: #752936 ;
+}
+
+#bioimage2{
+    padding: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    background-color:  #752936 ; 
+}
+
+#bio2{
+    padding-left: 10px;
+    padding-top: 20px;
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    background-color: #dfb93d;
+    font-size: medium;
+}
+
+#colorbar2{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    background-color: #752936 ;
+}
+
+#bioimage3{
+    padding: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 5;
+    background-color:  #752936 ; 
+}
+
+#bio3{
+    padding-left: 10px;
+    padding-top: 20px;
+    grid-column: 2 / span 2;
+    grid-row: 5;
+    background-color:  #dfb93d;
+    font-size: medium;
+}
+
+#colorbar3{
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    background-color: #752936 ;
+}
+
+
+#bioimage4{
+    padding: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 7;
+    background-color:  #752936 ; 
+}
+
+#bio4{
+    padding-left: 10px;
+    padding-top: 20px;
+    grid-column: 2 / span 1;
+    grid-row: 7;
+    background-color: #dfb93d;
+    font-size: medium;
+}
+
+#colorbar4{
+    grid-column: 1 / span 2;
+    grid-row: 8;
+    background-color: #752936 ;
+}
+
+
+#bioimage5{
+    padding: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 9;
+    background-color:  #752936 ;
+     
+}
+
+#bio5{
+    padding-left: 10px;
+    padding-top: 20px;
+    grid-column: 2 / span 5;
+    grid-row: 9;
+    background-color: #dfb93d;
+    font-size: medium;
+}
+
+#designartifacts{
+    padding-left: 10px;
+    padding-top: 3px;
+    text-align: center;
+    grid-column: 1 /span 2;
+    grid-row: 10;
+    background-color: #752936 ;
+}
+
+

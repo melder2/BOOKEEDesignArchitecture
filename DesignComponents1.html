@@ -1,0 +1,85 @@
+﻿﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Design Components</title>
+    <link rel="stylesheet" href="css/CSSFramework.css" />
+</head>
+<body>
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Browser, Data, Server</title>
+        <link rel="stylesheet" href="css/CSSFramework.css" />
+    </head>
+    <body>
+        <style>
+            div.a {
+                text-align: center;
+            }
+        </style>
+        <table width="100%" border="2px">
+            <div1 id="container">
+                <div2 id="close" class="a">
+
+                    <tr>
+                        <td colspan="8" width="100%">
+
+                            <h1>Browser, Data, Server</h1>
+
+                        </td>
+
+                    </tr>
+                </div2>
+
+                <td colspan="8" width="100%">
+                    <div3 id="links" class="a">
+                        <a class="button" href="architectural_design.html">Home</a>
+                        <a class="button" href="DesignComponents1.html">Browser, Data, Server</a>
+                        <a class="button" href="DesignComponents2.html">Distribution and Communication</a>
+                        <a class="button" href="DesignComponents3.html">Technologies</a>
+               
+                    </div3>
+                </td>
+
+                <tr>
+
+                    <td colspan="3" width="100%">
+                        <div6 id="paragraph1" class="a">
+
+                            <br><p><strong>A Browser/Server Model for an online appointment system will consist of two sets of functions.</strong></p>
+
+                            <br><p>  Online registration functions include registration. Login, selection of department, date, selecting an appointment slot, confirming the appointment, and receiving an email confirmation. </p>
+
+                            <div7 id="picture1" class="a">
+                                <p><img src="img/RegistrationandBooking.png" alt="Diagram" height="300px" width="800px" /> </p>
+                            </div7>
+
+                            <br><p> Data management functions allowing the administrator to add, delete, modify, inquiry, restore and back up. Add, delete, modify and inquiry are the basic operations of database management. </p>
+
+                            <div7 id="picture1" class="a">
+                                <p><img src="img/DataManagement.png" alt="Diagram" height="400px" width="600px" /> </p>
+                            </div7>
+                            <br><p> Bookee will be designed in a layered approach with a focus on components having a single concern, limiting duplicate functionality while providing stable interfaces. Due to Bookee’s straight forward design it uses minimal components which reduces its overall complexity. </p>
+
+                            <div7 id="picture1" class="a">
+                                <p><img src="img/LayeredModel.png" alt="Diagram" height="400px" width="800px" /> </p>
+                            </div7>
+                            <br><p> The first component on the top layer of Bookee’s design is its user interface. The UI is accessed through a web-browser, so it provides a stable/familiar interface for the user.  The next layer will be the cloud-based server component. The server will supply the power, security and communication for the system.  While this does duplicate the functionality of the server, that frees up the other components to have only single concerns.  The final and bottom layer of the system will be split in half with the last two components existing side by side one another. To the bottom left of the server will be the database component and to the right will be the application component. This reduces cross-cutting as both components need to communicate with the server.</p><br>
+
+                        </div6>
+                    </td>
+                <tr>
+                    <td colspan="8">
+                        <div8 id="copyright" class="a">
+                            <p>Designed By: Team Alguyrithms @2023 </p>
+                        </div8>
+                    </td>
+                </tr>
+            </div1>
+        </table>
+    </body>
+</html>
